@@ -1,4 +1,5 @@
 const startDate = new Date("2026-05-28T00:00:00");
+
 function updateCounter() {
     const counter = document.getElementById("counter");
     if (!counter) return;
