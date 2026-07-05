@@ -50,38 +50,8 @@ function randomReason() {
     reason.innerHTML = reasons[random];
 }
 
-// Start everything
 updateCounter();
 updateClock();
 
 setInterval(updateCounter, 1000);
-setInterval(updateClock, 1000);    if (!reason) return;
-
-    const random = Math.floor(Math.random() * reasons.length);
-    reason.innerHTML = reasons[random];
-}"💖 Because you always make me feel safe.",
-
-"🥹 Because you're my favorite person.",
-
-"🌍 Because home is wherever you are.",
-
-"🌙 Because you understand me.",
-
-"💞 Because your laugh is my favorite sound.",
-
-"✨ Because life is better with you.",
-
-"💗 Because every memory with you is precious.",
-
-"🌸 Because you're my forever."
-
-];
-
-function randomReason(){
-
-    let random = Math.floor(Math.random()*reasons.length);
-
-    document.getElementById("reason").innerHTML =
-        reasons[random];
-
-}
+setInterval(updateClock, 1000);
