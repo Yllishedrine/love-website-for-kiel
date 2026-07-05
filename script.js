@@ -1,4 +1,4 @@
-const startDate = new Date("2026-05-28T00:00:00");
+const startDate = new Date("2025-05-28T00:00:00");
 
 function updateCounter() {
     const counter = document.getElementById("counter");
@@ -16,8 +16,18 @@ function updateCounter() {
         `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds ❤️`;
 }
 
-updateCounter();
-setInterval(updateCounter, 1000);
+function updateClock() {
+    const clock = document.getElementById("clock");
+    if (!clock) return;
+
+    const now = new Date();
+
+    clock.innerHTML = now.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+}
 
 const reasons = [
     "❤️ Because your smile melts my heart.",
@@ -35,6 +45,17 @@ const reasons = [
 function randomReason() {
     const reason = document.getElementById("reason");
     if (!reason) return;
+
+    const random = Math.floor(Math.random() * reasons.length);
+    reason.innerHTML = reasons[random];
+}
+
+// Start everything
+updateCounter();
+updateClock();
+
+setInterval(updateCounter, 1000);
+setInterval(updateClock, 1000);    if (!reason) return;
 
     const random = Math.floor(Math.random() * reasons.length);
     reason.innerHTML = reasons[random];
