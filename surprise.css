@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    
-    background: #738678;
+     background:linear-gradient(135deg,#738678,#738678,#d5ffbf);
     
     font-family: Arial, sans-serif;
 
@@ -86,6 +85,55 @@ h2{
 
 h3{
 
+    color:#738678;
+
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#738678;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+#message{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:#738678;
+
+}
+
+@media (max-height: 500px) {
+    body {
+    
+        align-items: flex-start;
+        
+        padding: 20px;
+    }
+    
+}
     color:#738678;
 
 }
