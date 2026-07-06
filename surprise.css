@@ -1,1 +1,137 @@
+body {
+    margin: 0;
+    
+    background: #738678;
+    
+    font-family: Arial, sans-serif;
 
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+
+    min-height: 100vh;
+    
+    overflow-y: auto;
+}
+
+.card {
+    background:#fff;
+    
+    width:77%;
+    
+    max-width:600px;
+    
+    padding:20px;
+    
+    border-radius:20px;
+    
+    text-align:center;
+    
+    box-shadow:0 0 30px rgba(0,0,0,.2);
+
+    margin:20px 0;
+
+}
+
+.container {
+    cursor:pointer;
+    
+    text-align:center;
+    
+    color:#738678;
+    
+    padding:20px;
+    
+    border-radius:10px;
+    
+    background:#FFFFFF;
+    
+    width: 100%;
+    
+    padding: 20px;
+    
+    box-sizing: border-box;
+    
+    text-align:center;
+    
+    box-shadow:0 0 30px rgba(0,0,0,.2);
+   
+}
+
+#coverText {
+    display: block;
+}
+
+#hiddenMessage {
+    display: none;
+}
+
+#hiddenMessage.show {
+    display: block;
+}
+
+h1{
+
+    color:#738678;
+
+}
+
+h2{
+
+    color:#738678;
+
+}
+
+h3{
+
+    color:#738678;
+
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#738678;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+#message{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    color:#738678;
+
+}
+
+@media (max-height: 500px) {
+    body {
+    
+        align-items: flex-start;
+        
+        padding: 20px;
+    }
+    
+}
